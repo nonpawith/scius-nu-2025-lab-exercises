@@ -5,10 +5,6 @@ Goal: Build a real-time HR and SpO2 monitoring dashboard.
 Task: Combine OLED, buzzer, and LED into a mini patient monitor.
 */
 
-// Combine OLED and buzzer from Labs 8 and 9
-// Display 'NORMAL' or 'ALERT' message on OLED based on values
-// Trigger buzzer and LED alerts accordingly
-
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
@@ -39,6 +35,11 @@ void setup() {
 }
 
 void loop() {
+  
+  // Combine OLED and buzzer from Labs 8 and 9
+  // Display 'NORMAL' or 'ALERT' message on OLED based on values
+  // Trigger buzzer and LED alerts accordingly
+
   pox.update();
 
   float hr = pox.getHeartRate();

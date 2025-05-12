@@ -2,10 +2,10 @@
 Lab 2: Multi-LED Sequencer
 
 Goal: Control multiple outputs.
-Task: Blink LEDs in sequence: GPIO 14 → 25 → 26 → 27.
+Task: Blink LEDs in sequence: GPIO 25 → 26 → 27 → 14.
 */
 
-int leds[] = {14, 25, 26, 27};
+int leds[] = {25, 26, 27, 14};
 
 void setup() {
   for (int i = 0; i < 4; i++)
